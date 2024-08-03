@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviantReddit</title>
+    <!-- Подключение Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Подключение Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+
+    <nav class="navbar custom-navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    DeviantHub
+                </a>
+                <div class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <div class="navbar-item">
+                        <!-- Additional items or links can go here -->
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <div class="navbar-item">
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                                <span class="icon is-left">
+                                    <i class="fas fa-search"></i>
+                                </span>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                    <a href="#">
+                        <img class="profile-image mt-2 mr-2" src="img/profile.jpg" alt="Profile">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- PAGE CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Menu</p>
+                        <ul class="menu-list menu-list-custom">
+                            <li><a href="#" class="is-active">Home</a></li>
+                            <li><a href="#" class="is-active">Popular</a></li>
+                            <li><a href="#" class="is-active">Explore</a></li>
+                            <li><a href="#" class="is-active">All</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <!-- FEED -->
+                <div class="column is-6">
+                    <div class="content">
+                        <h1 class="title">Recent Posts</h1>
+
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Post Title 2</strong>
+                                            <br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <br>
+                                            <small>Posted on: 2024-08-02</small>
+                                        </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+
+                                            <!-- up/down voting -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="upvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">123</span>
+                                                <a class="vote-button" aria-label="downvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!-- commenting -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-comments" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">78</span>
+                                            </div>
+                                            <!-- sharing -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Post Title 2</strong>
+                                            <br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <br>
+                                            <small>Posted on: 2024-08-02</small>
+                                        </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="upvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">123</span>
+                                                <a class="vote-button" aria-label="downvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-comments" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">78</span>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p>
+                                            <strong>Post Title 2</strong>
+                                            <br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            <br>
+                                            <small>Posted on: 2024-08-02</small>
+                                        </p>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="upvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">123</span>
+                                                <a class="vote-button" aria-label="downvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-comments" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">78</span>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </article>
+                        </div>
+                        
+                        
+
+                    </div>
+                </div>
+    
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Subreddits</p>
+                        <ul class="menu-list menu-list-custom">
+                            <li><a href="#" class="is-active">Technology</a></li>
+                            <li><a href="#" class="is-active">Science</a></li>
+                            <li><a href="#" class="is-active">Gaming</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>DeviantReddit</strong> by <a href="https://yourwebsite.com">Your Name</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript файлов -->
+    <script>
+        // Код для работы с булма-бургером меню
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgers = Array.prototype.slice.call(document.querySelectorAll('.burger'), 0);
+            if (burgers.length > 0) {
+                burgers.forEach(burger => {
+                    burger.addEventListener('click', () => {
+                        const target = document.getElementById(burger.dataset.target);
+                        burger.classList.toggle('is-active');
+                        target.classList.toggle('is-active');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
