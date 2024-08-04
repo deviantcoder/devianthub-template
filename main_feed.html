@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,46 +13,52 @@
 </head>
 <body>
     <!-- NAV BAR -->
-
-    <nav class="navbar custom-navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    DeviantHub
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
                 </a>
-                <div class="navbar-burger burger" data-target="navbarMenu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-start">
-                    <div class="navbar-item">
-                        <!-- Additional items or links can go here -->
-                    </div>
-                </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
                 <div class="navbar-center">
-                    <div class="navbar-item">
-                        <div class="field">
-                            <div class="control has-icons-left">
-                                <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
-                                <span class="icon is-left">
-                                    <i class="fas fa-search"></i>
-                                </span>  
-                            </div>
-                        </div>
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
                     </div>
                 </div>
+    
                 <div class="navbar-end">
-                    <a href="#">
-                        <img class="profile-image mt-2 mr-2" src="img/profile.jpg" alt="Profile">
+                    
+                    <a class="navbar-item a-button">
+                        Create +
                     </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-    
+    </nav>    
 
     <!-- PAGE CONTENT -->
     <section class="section">
@@ -64,12 +70,103 @@
                     <aside class="menu">
                         <p class="menu-label">Menu</p>
                         <ul class="menu-list menu-list-custom">
-                            <li><a href="#" class="is-active">Home</a></li>
-                            <li><a href="#" class="is-active">Popular</a></li>
-                            <li><a href="#" class="is-active">Explore</a></li>
-                            <li><a href="#" class="is-active">All</a></li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-fire" aria-hidden="true"></i>
+                                    </span>
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-binoculars" aria-hidden="true"></i>
+                                    </span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-th" aria-hidden="true"></i>
+                                    </span>
+                                    All
+                                </a>
+                            </li>
                         </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Recent</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c1.jpg" alt="Logo" class="community-image">
+                                    c/4kwallpapers
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c2.jpg" alt="Logo" class="community-image">
+                                    c/nature
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c3.png" alt="Logo" class="community-image">
+                                    c/webdesign
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Communities</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <span class="icon is-small ml-3 mr-2">
+                                        <i class="fas fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    Create a community
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c4.jpg" alt="Logo" class="community-image">
+                                    c/metalcore
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c5.jpg" alt="Logo" class="community-image">
+                                    c/spotify-trends
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c6.jpg" alt="Logo" class="community-image">
+                                    c/coding
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+                        <p class="menu-label">DeviantHub by <a href="">deviantcoder</a>. 2024</p>
+
                     </aside>
+                    
                 </div>
 
                 <!-- FEED -->
@@ -81,13 +178,19 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
-                                            <strong>Post Title 2</strong>
-                                            <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            <br>
-                                            <small>Posted on: 2024-08-02</small>
-                                        </p>
+                                        <div class="post-header">
+                                            <img src="img/c1.jpg" alt="Logo" class="post-image">
+                                        </div>
+                                        
+                                        <div class="post-content">
+                                            <p>
+                                                <strong>Post Title 3</strong>
+                                                <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <br>
+                                                <small>Posted on: 2024-08-02</small>
+                                            </p>
+                                        </div>
                                     </div>
                                     <nav class="level is-mobile">
                                         <div class="level-left">
@@ -129,17 +232,77 @@
                             </article>
                         </div>
 
+                        <hr>
+
                         <div class="box">
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
-                                            <strong>Post Title 2</strong>
-                                            <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            <br>
-                                            <small>Posted on: 2024-08-02</small>
-                                        </p>
+                                        <div class="post-content">
+                                            <p>
+                                                <strong>Post Title 3</strong>
+                                                <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <br>
+                                                <small>Posted on: 2024-08-02</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="upvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">123</span>
+                                                <a class="vote-button" aria-label="downvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-comments" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">78</span>
+                                            </div>
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </article>
+                        </div>
+
+                        <hr>
+
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="post-header">
+                                            <img src="img/c3.png" alt="Logo" class="post-image">
+                                        </div>
+                                        
+                                        <div class="post-content">
+                                            <p>
+                                                <strong>Post Title 3</strong>
+                                                <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <br>
+                                                <small>Posted on: 2024-08-02</small>
+                                            </p>
+                                        </div>
                                     </div>
                                     <nav class="level is-mobile">
                                         <div class="level-left">
@@ -181,13 +344,19 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
-                                        <p>
-                                            <strong>Post Title 2</strong>
-                                            <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            <br>
-                                            <small>Posted on: 2024-08-02</small>
-                                        </p>
+                                        <div class="post-header">
+                                            <img src="img/c7.jpg" alt="Logo" class="post-image">
+                                        </div>
+                                        
+                                        <div class="post-content">
+                                            <p>
+                                                <strong>Post Title 3</strong>
+                                                <br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                <br>
+                                                <small>Posted on: 2024-08-02</small>
+                                            </p>
+                                        </div>
                                     </div>
                                     <nav class="level is-mobile">
                                         <div class="level-left">
@@ -226,19 +395,80 @@
                         </div>
                         
                         
-
                     </div>
                 </div>
     
                 <!-- SIDE PANEL -->
                 <div class="column is-3">
                     <aside class="menu">
-                        <p class="menu-label">Subreddits</p>
-                        <ul class="menu-list menu-list-custom">
-                            <li><a href="#" class="is-active">Technology</a></li>
-                            <li><a href="#" class="is-active">Science</a></li>
-                            <li><a href="#" class="is-active">Gaming</a></li>
+                        <p class="menu-label">Recent Posts</p>
+
+                        <ul class="">
+                            
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c5.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">c/webdesign</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">99 upvotes - 29 comments</span></div>
+                                  </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c6.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">c/coding</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">29 upvotes - 9 comments</span></div>
+                                  </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c6.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">c/metalcore</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">29 upvotes - 9 comments</span></div>
+                                  </div>
+                            </li>
+                            
                         </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Topics</p>
+
+                        <ul class="menu-list menu-list-custom">
+                            <li>
+                                <a href="#" class="is-active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    Explore
+                                </a>
+                            </li>
+                            
+                        </ul>
+
                     </aside>
                 </div>
             </div>
@@ -247,19 +477,19 @@
         
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 <strong>DeviantReddit</strong> by <a href="https://yourwebsite.com">Your Name</a>.
             </p>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Подключение JavaScript файлов -->
     <script>
         // Код для работы с булма-бургером меню
         document.addEventListener('DOMContentLoaded', () => {
-            const burgers = Array.prototype.slice.call(document.querySelectorAll('.burger'), 0);
+            const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
             if (burgers.length > 0) {
                 burgers.forEach(burger => {
                     burger.addEventListener('click', () => {
