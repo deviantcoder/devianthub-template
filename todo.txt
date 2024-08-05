@@ -1,0 +1,12 @@
+1. home (main feed)
+2. profile page
+3. user page
+4. community page
+5. popular page
+6. explore page
+7. all page
+8. post creation page
+9. messages page
+10. notifications
+11. post page
+12. images carousel

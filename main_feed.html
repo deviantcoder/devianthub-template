@@ -41,9 +41,15 @@
                 </div>
     
                 <div class="navbar-end">
-                    
                     <a class="navbar-item a-button">
-                        Create +
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
                     </a>
                     <a class="navbar-item a-button">
                         <span class="icon is-left">
@@ -63,7 +69,7 @@
     <!-- PAGE CONTENT -->
     <section class="section">
         <div class="container">
-            <div class="columns">
+            <div class="columns is-centered">
 
                 <!-- SIDE PANEL -->
                 <div class="column is-3">
@@ -170,7 +176,7 @@
                 </div>
 
                 <!-- FEED -->
-                <div class="column is-6">
+                <div class="column is-8">
                     <div class="content">
                         <h1 class="title">Recent Posts</h1>
 
@@ -178,17 +184,77 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
+                                        
+                                        <div class="community-item recent-item">
+                                            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                <div class="item" style="display: flex; align-items: center;">
+                                                    <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                        <img src="img/profile.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                        <span class="is-size-7">c/webdesign</span>
+                                                    </a>
+                                                    <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="dropdown is-hoverable">
+                                                        <div class="dropdown-trigger">
+                                                          <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                            </span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                          <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
                                         <div class="post-header">
-                                            <img src="img/c1.jpg" alt="Logo" class="post-image">
+                                            <a href="#" class="js-modal-trigger" data-target="modal-js-example-1">
+                                                <img src="img/c1.jpg" alt="Post" class="post-image">
+                                            </a>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div id="modal-js-example-1" class="modal">
+                                            <div class="modal-background"></div>
+                                            <div class="modal-content is-large-image">
+                                                <p class="image">
+                                                    <img src="img/c1.jpg" alt="Post">
+                                                </p>
+                                            </div>
+                                            <button class="modal-close is-large" aria-label="close"></button>
                                         </div>
                                         
                                         <div class="post-content">
                                             <p>
-                                                <strong>Post Title 3</strong>
+                                                <strong><a href="" class="post-title">Post Title 1</a></strong>
                                                 <br>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 <br>
-                                                <small>Posted on: 2024-08-02</small>
+                                                <small class="additional-info">Posted on: 2024-08-02</small>
                                             </p>
                                         </div>
                                     </div>
@@ -238,13 +304,61 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
+
+                                        <div class="community-item recent-item">
+                                            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                <div class="item" style="display: flex; align-items: center;">
+                                                    <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                        <img src="img/profile.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                        <span class="is-size-7">c/webdesign</span>
+                                                    </a>
+                                                    <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="dropdown is-hoverable">
+                                                        <div class="dropdown-trigger">
+                                                          <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                            </span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                          <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="post-content">
                                             <p>
-                                                <strong>Post Title 3</strong>
+                                                <strong><a href="" class="post-title">Post Title 2</a></strong>
                                                 <br>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                <br>
-                                                <small>Posted on: 2024-08-02</small>
+                                                <span class="post-text">
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                                </span>
+                                                <br> 
+                                                <small class="additional-info">Posted on: 2024-08-02</small>
                                             </p>
                                         </div>
                                     </div>
@@ -290,71 +404,76 @@
                             <article class="media">
                                 <div class="media-content">
                                     <div class="content">
-                                        <div class="post-header">
-                                            <img src="img/c3.png" alt="Logo" class="post-image">
-                                        </div>
-                                        
-                                        <div class="post-content">
-                                            <p>
-                                                <strong>Post Title 3</strong>
-                                                <br>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                <br>
-                                                <small>Posted on: 2024-08-02</small>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <nav class="level is-mobile">
-                                        <div class="level-left">
-                                            <div class="vote-group">
-                                                <a class="vote-button" aria-label="upvote">
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
-                                                    </span>
-                                                </a>
-                                                <span class="vote-count">123</span>
-                                                <a class="vote-button" aria-label="downvote">
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="vote-group">
-                                                <a class="vote-button" aria-label="comments">
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-comments" aria-hidden="true"></i>
-                                                    </span>
-                                                </a>
-                                                <span class="vote-count">78</span>
-                                            </div>
-                                            <div class="vote-group">
-                                                <a class="vote-button" aria-label="comments">
-                                                    <span class="icon is-small">
-                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </nav>
-                                </div>
-                            </article>
-                        </div>
 
-                        <div class="box">
-                            <article class="media">
-                                <div class="media-content">
-                                    <div class="content">
+                                        <div class="community-item recent-item">
+                                            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                <div class="item" style="display: flex; align-items: center;">
+                                                    <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                        <img src="img/profile.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                        <span class="is-size-7">c/webdesign</span>
+                                                    </a>
+                                                    <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="dropdown is-hoverable">
+                                                        <div class="dropdown-trigger">
+                                                          <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                            </span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                          <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="post-header">
-                                            <img src="img/c7.jpg" alt="Logo" class="post-image">
+                                            <a href="#" class="js-modal-trigger" data-target="modal-js-example-3">
+                                                <img src="img/c5.jpg" alt="Post" class="post-image">
+                                            </a>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div id="modal-js-example-3" class="modal">
+                                            <div class="modal-background"></div>
+                                            <div class="modal-content is-large-image">
+                                                <p class="image">
+                                                    <img src="img/c5.jpg" alt="Post">
+                                                </p>
+                                            </div>
+                                            <button class="modal-close is-large" aria-label="close"></button>
                                         </div>
                                         
                                         <div class="post-content">
                                             <p>
-                                                <strong>Post Title 3</strong>
+                                                <strong><a href="" class="post-title">Post Title 4</a></strong>
                                                 <br>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                                 <br>
-                                                <small>Posted on: 2024-08-02</small>
+                                                <small class="additional-info">Posted on: 2024-08-02</small>
                                             </p>
                                         </div>
                                     </div>
@@ -485,21 +604,7 @@
         </div>
     </footer> -->
 
-    <!-- Подключение JavaScript файлов -->
-    <script>
-        // Код для работы с булма-бургером меню
-        document.addEventListener('DOMContentLoaded', () => {
-            const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            if (burgers.length > 0) {
-                burgers.forEach(burger => {
-                    burger.addEventListener('click', () => {
-                        const target = document.getElementById(burger.dataset.target);
-                        burger.classList.toggle('is-active');
-                        target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
-    </script>
+    <!-- JS -->
+    <script src="js/main.js"></script> 
 </body>
 </html>

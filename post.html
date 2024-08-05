@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviantReddit | Post</title>
+    <!-- Подключение Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Подключение Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
+                <div class="navbar-center">
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- PAGE CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Menu</p>
+                        <ul class="menu-list menu-list-custom">
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-fire" aria-hidden="true"></i>
+                                    </span>
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-binoculars" aria-hidden="true"></i>
+                                    </span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-th" aria-hidden="true"></i>
+                                    </span>
+                                    All
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Recent</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c1.jpg" alt="Logo" class="community-image">
+                                    c/4kwallpapers
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c2.jpg" alt="Logo" class="community-image">
+                                    c/nature
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c3.png" alt="Logo" class="community-image">
+                                    c/webdesign
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Communities</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <span class="icon is-small ml-3 mr-2">
+                                        <i class="fas fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    Create a community
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c4.jpg" alt="Logo" class="community-image">
+                                    c/metalcore
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c5.jpg" alt="Logo" class="community-image">
+                                    c/spotify-trends
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c6.jpg" alt="Logo" class="community-image">
+                                    c/coding
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+                        <p class="menu-label">DeviantHub by <a href="">deviantcoder</a>. 2024</p>
+
+                    </aside>
+                    
+                </div>
+
+                <!-- FEED -->
+                <div class="column is-8">
+                    <div class="content">
+                        <div class="box">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                            <div class="item" style="display: flex; align-items: center;">
+                                                <a href="" class="back-link">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-left" style="font-size: 12px;"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <div class="dropdown is-hoverable">
+                                                    <div class="dropdown-trigger back-link">
+                                                        <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-h" style="font-size: 12px;"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                        <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="community-item recent-item">
+                                            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                <div class="item" style="display: flex; align-items: center;">
+                                                    <img src="img/c4.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                    <div style="display: flex; flex-direction: column; margin-left: 0;">
+                                                        <a href="" class="recent-post-link" style="text-align: left; margin-bottom: -4px; padding-bottom: 0;">
+                                                            <span class="is-size-7" style="display: block;">c/webdesign</span>
+                                                        </a>
+                                                        <a href="" style="text-align: left; color: rgb(190, 190, 190);">
+                                                            <span class="username-link" style="display: block; margin-top: -2px; font-size: 13px;">DeviantCoder</span>
+                                                        </a>
+                                                    </div>
+                                                    <span class="is-size-7 ml-3"> • 5 hours ago</span>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <h3>Post Title</h3>
+                                        <div class="post-header">
+                                            <a href="#" class="js-modal-trigger" data-target="modal-js-example-1">
+                                                <img src="img/c1.jpg" alt="Post" class="post-image">
+                                            </a>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div id="modal-js-example-1" class="modal">
+                                            <div class="modal-background"></div>
+                                            <div class="modal-content is-large-image">
+                                                <p class="image">
+                                                    <img src="img/c1.jpg" alt="Post">
+                                                </p>
+                                            </div>
+                                            <button class="modal-close is-large" aria-label="close"></button>
+                                        </div>
+                                        
+                                        <div class="post-content">
+                                            <p>
+                                                There are many variations of passages of Lorem Ipsum available, but the majority have 
+                                                suffered alteration in some form, by injected humour, or randomised words which don't 
+                                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you 
+                                                need to be sure there isn't anything embarrassing hidden in the middle of text. All the 
+                                                Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+                                                making this the first true generator on the Internet. It uses a dictionary of over 200 
+                                                Latin words, combined with a handful of model sentence structures, to generate Lorem 
+                                                Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from 
+                                                repetition, injected humour, or non-characteristic words etc.
+                                                <br>
+                                                <small class="additional-info">Posted on: 2024-08-02</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <nav class="level is-mobile">
+                                        <div class="level-left">
+
+                                            <!-- up/down voting -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="upvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">123</span>
+                                                <a class="vote-button" aria-label="downvote">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!-- commenting -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-comments" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <span class="vote-count">78</span>
+                                            </div>
+                                            <!-- sharing -->
+                                            <div class="vote-group">
+                                                <a class="vote-button" aria-label="comments">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </article>
+                        </div>
+
+                        <hr>
+
+                        <!-- COMMENTS -->
+
+                        <div class="box">
+                            <h3>Comments</h3>
+                            <article class="media">
+                                <div class="media-content">
+                                <div class="field">
+                                    <p class="control">
+                                        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+                                    </p>
+                                </div>
+                                <nav class="level">
+                                    <div class="level-left">
+                                    <div class="level-item">
+                                        <a class="button is-info">Submit</a>
+                                    </div>
+                                    </div>
+                                </nav>
+                                </div>
+                            </article>
+
+                            <hr>
+
+                            <article class="media">
+                                <figure class="media-left">
+                                    <img src="img/profile.jpg" class="profile-image" />
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p style="font-size: 15px;">
+                                            <strong><a href="" class="comment-username">DeviantCoder</a></strong>
+                                            <span class="is-size-7 ml-1">• 5 hours ago</span>
+                                            <br />
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros
+                                            lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris
+                                            sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                                            <br />
+                                            
+                                        <nav class="level is-mobile btn-group-comment">
+                                            <div class="level-left">
+                                                <!-- up/down voting -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="upvote">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                    <span class="vote-count">123</span>
+                                                    <a class="vote-button-comment" aria-label="downvote">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <!-- reply -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="comments">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-reply" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <!-- sharing -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="comments">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="vote-group-comment dropdown is-hoverable">
+                                                    <div class="dropdown-trigger">
+                                                        <button class="vote-button-comment" aria-label="comments">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-h" style="font-size: 12px;"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                        <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </p>
+                                </div>
+                              
+                                <article class="media">
+                                    <figure class="media-left">
+                                        <img src="img/c7.jpg" class="profile-image" />
+                                    </figure>
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p style="font-size: 15px;">
+                                                <strong><a href="" class="comment-username">DeviantCoder</a></strong>
+                                                <span class="is-size-7 ml-1">• 5 hours ago</span>
+                                                <br />
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros
+                                                lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris
+                                                sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                                                <br />
+                                                
+                                            <nav class="level is-mobile btn-group-comment">
+                                                <div class="level-left">
+                                                    <!-- up/down voting -->
+                                                    <div class="vote-group-comment">
+                                                        <a class="vote-button-comment" aria-label="upvote">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                            </span>
+                                                        </a>
+                                                        <span class="vote-count">123</span>
+                                                        <a class="vote-button-comment" aria-label="downvote">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- reply -->
+                                                    <div class="vote-group-comment">
+                                                        <a class="vote-button-comment" aria-label="comments">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-reply" aria-hidden="true"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- sharing -->
+                                                    <div class="vote-group-comment">
+                                                        <a class="vote-button-comment" aria-label="comments">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="vote-group-comment dropdown is-hoverable">
+                                                        <div class="dropdown-trigger">
+                                                            <button class="vote-button-comment" aria-label="comments">
+                                                                <span class="icon is-small">
+                                                                    <i class="fas fa-ellipsis-h" style="font-size: 12px;"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                            <div class="dropdown-content">
+                                                                <div class="dropdown-item">
+                                                                    <a href="" class="post-title">
+                                                                        <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                        <strong>Save</strong>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dropdown-item">
+                                                                    <a href="" class="post-title">
+                                                                        <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                        <strong>Hide</strong>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="dropdown-item">
+                                                                    <a href="" class="post-title">
+                                                                        <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                        <strong>Report</strong>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </p>
+                                    </div>
+
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <img src="img/c2.jpg" class="profile-image" />
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p style="font-size: 15px;">
+                                                    <strong><a href="" class="comment-username">DeviantCoder</a></strong>
+                                                    <span class="is-size-7 ml-1">• 5 hours ago</span>
+                                                    <br />
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros
+                                                    lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris
+                                                    sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                                                    <br />
+                                                    
+                                                <nav class="level is-mobile btn-group-comment">
+                                                    <div class="level-left">
+                                                        <!-- up/down voting -->
+                                                        <div class="vote-group-comment">
+                                                            <a class="vote-button-comment" aria-label="upvote">
+                                                                <span class="icon is-small">
+                                                                    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                                </span>
+                                                            </a>
+                                                            <span class="vote-count">123</span>
+                                                            <a class="vote-button-comment" aria-label="downvote">
+                                                                <span class="icon is-small">
+                                                                    <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- reply -->
+                                                        <div class="vote-group-comment">
+                                                            <a class="vote-button-comment" aria-label="comments">
+                                                                <span class="icon is-small">
+                                                                    <i class="fas fa-reply" aria-hidden="true"></i>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <!-- sharing -->
+                                                        <div class="vote-group-comment">
+                                                            <a class="vote-button-comment" aria-label="comments">
+                                                                <span class="icon is-small">
+                                                                    <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="vote-group-comment dropdown is-hoverable">
+                                                            <div class="dropdown-trigger">
+                                                                <button class="vote-button-comment" aria-label="comments">
+                                                                    <span class="icon is-small">
+                                                                        <i class="fas fa-ellipsis-h" style="font-size: 12px;"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                                <div class="dropdown-content">
+                                                                    <div class="dropdown-item">
+                                                                        <a href="" class="post-title">
+                                                                            <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                            <strong>Save</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dropdown-item">
+                                                                        <a href="" class="post-title">
+                                                                            <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                            <strong>Hide</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="dropdown-item">
+                                                                        <a href="" class="post-title">
+                                                                            <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                            <strong>Report</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </p>
+                                        </div>
+                                      </article>
+
+                                </article>
+
+
+                                </div>
+                            </article>
+
+                            <article class="media">
+                                <figure class="media-left">
+                                    <img src="img/c6.jpg" class="profile-image" />
+                                </figure>
+                                <div class="media-content">
+                                    <div class="content">
+                                        <p style="font-size: 15px;">
+                                            <strong><a href="" class="comment-username">DeviantCoder</a></strong>
+                                            <span class="is-size-7 ml-1">• 5 hours ago</span>
+                                            <br />
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros
+                                            lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris
+                                            sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                                            <br />
+                                            
+                                        <nav class="level is-mobile btn-group-comment">
+                                            <div class="level-left">
+                                                <!-- up/down voting -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="upvote">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                    <span class="vote-count">123</span>
+                                                    <a class="vote-button-comment" aria-label="downvote">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <!-- reply -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="comments">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-reply" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <!-- sharing -->
+                                                <div class="vote-group-comment">
+                                                    <a class="vote-button-comment" aria-label="comments">
+                                                        <span class="icon is-small">
+                                                            <i class="fas fa-share-alt" aria-hidden="true"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="vote-group-comment dropdown is-hoverable">
+                                                    <div class="dropdown-trigger">
+                                                        <button class="vote-button-comment" aria-label="comments">
+                                                            <span class="icon is-small">
+                                                                <i class="fas fa-ellipsis-h" style="font-size: 12px;"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                        <div class="dropdown-content">
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                    <strong>Save</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-eye-slash mr-3" aria-hidden="true"></i>
+                                                                    <strong>Hide</strong>
+                                                                </a>
+                                                            </div>
+                                                            <div class="dropdown-item">
+                                                                <a href="" class="post-title">
+                                                                    <i class="fas fa-flag mr-3" aria-hidden="true"></i>
+                                                                    <strong>Report</strong>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </p>
+                                </div>
+                              </article>
+
+                            <nav class="pagination" role="navigation" aria-label="pagination">
+                                <a class="pagination-link" href="#" aria-label="Previous page">Prev</a>
+                                <a class="pagination-link" href="#" aria-label="Page 1" aria-current="page">1</a>
+                                <a class="pagination-link" href="#" aria-label="Page 2">2</a>
+                                <a class="pagination-link" href="#" aria-label="Page 3">3</a>
+                                <a class="pagination-link" href="#" aria-label="Next page">Next</a>
+                            </nav>
+                            
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+    
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <ul class="">
+                            <li class="community-item recent-item">
+                                <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div class="item">
+                                        <strong>
+                                            <a href="" style="font-size: 19px; color: aliceblue;">
+                                                c/django_backend
+                                            </a>
+                                        </strong>
+                                    </div>
+                                    <div class="item">
+                                        <a href="" class="join-link">Join</a>
+                                    </div>
+                                </div>
+                            </li>
+                            
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item"><strong style="color: rgb(189, 189, 189);">Django Backend Coding</strong></div>
+                                    <div class="item">
+                                        <span style="font-size: 13px; color: rgb(134, 133, 165);">
+                                            There are many variations of passages of Lorem Ipsum available, 
+                                            but the majority have suffered alteration in some form, by injected 
+                                            humour...
+                                        </span>
+                                    </div>
+                                    <div class="item" style="display: flex; justify-content: center;">
+                                        <a href="" class="show-more" style="font-size: 14px;">Show more</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div class="item" style="text-align: center;">
+                                        <span>Members</span>
+                                        <div><strong>1.2k</strong></div>
+                                    </div>
+                                    <div class="item">
+                                        <span class="online-label">Online</span>
+                                        <div><strong>12</strong></div>
+                                    </div>
+                                    <div class="item">
+                                        <span>Posts</span>
+                                        <div><strong>291</strong></div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <hr>
+
+                            <p class="menu-label">Mods</p>
+
+                            <li class="community-item recent-item">
+                                <div class="container" style="">
+                                    <div class="item mt-2" style="display: flex; align-items: center;">
+                                        <img src="img/profile.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                        <div style="display: flex; flex-direction: column; margin-left: 0;">
+                                            <a href="" class="recent-post-link" style="text-align: left; margin-bottom: -4px; padding-bottom: 0;">
+                                                <span class="is-size-7" style="display: block;">u/deviantcoder</span>
+                                            </a>
+                                            <a href="" style="text-align: left; color: rgb(190, 190, 190);">
+                                                <span class="username-link" style="display: block; margin-top: -2px; font-size: 13px;">DeviantCoder</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mt-4" style="display: flex; align-items: center;">
+                                        <img src="img/c1.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                        <div style="display: flex; flex-direction: column; margin-left: 0;">
+                                            <a href="" class="recent-post-link" style="text-align: left; margin-bottom: -4px; padding-bottom: 0;">
+                                                <span class="is-size-7" style="display: block;">u/randomuser</span>
+                                            </a>
+                                            <a href="" style="text-align: left; color: rgb(190, 190, 190);">
+                                                <span class="username-link" style="display: block; margin-top: -2px; font-size: 13px;">RandUs</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item mt-4" style="display: flex; align-items: center;">
+                                        <img src="img/c6.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                        <div style="display: flex; flex-direction: column; margin-left: 0;">
+                                            <a href="" class="recent-post-link" style="text-align: left; margin-bottom: -4px; padding-bottom: 0;">
+                                                <span class="is-size-7" style="display: block;">u/grivnaaaa</span>
+                                            </a>
+                                            <a href="" style="text-align: left; color: rgb(190, 190, 190);">
+                                                <span class="username-link" style="display: block; margin-top: -2px; font-size: 13px;">Grivnaaaa</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            
+                        </ul>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script> 
+</body>
+</html>
