@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeviantReddit | Post</title>
+    <title>DeviantHub | Post</title>
     <!-- Подключение Bulma -->
     <link rel="stylesheet" href="css/bulma.css">
     <!-- Подключение Custom CSS -->
@@ -245,10 +245,47 @@
                                         </div>
                                         
                                         <h3>Post Title</h3>
-                                        <div class="post-header">
-                                            <a href="#" class="js-modal-trigger" data-target="modal-js-example-1">
-                                                <img src="img/c1.jpg" alt="Post" class="post-image">
-                                            </a>
+                                        <div class="post-header mb-3">
+                                            <section class="carousel">
+                                                <div class="carousel-wrapper">
+                                                    <div class="carousel-slide">
+                                                        <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c5.jpg">
+                                                            <img src="img/c5.jpg" alt="Post" class="post-image">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-slide">
+                                                        <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                            <img src="img/c7.jpg" alt="Post" class="post-image">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-slide">
+                                                        <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                            <img src="img/c1.jpg" alt="Post" class="post-image">
+                                                        </a>
+                                                    </div>
+                                                    <div class="carousel-slide">
+                                                        <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                            <img src="img/c2.jpg" alt="Post" class="post-image">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control prev">‹</button>
+                                                <button class="carousel-control next">›</button>
+                                            
+                                                <!-- Modal -->
+                                                <div id="modal-js-example-3" class="modal">
+                                                    <div class="modal-background"></div>
+                                                    <div class="modal-content">
+                                                        <img id="modal-image" src="" alt="Full Size Image">
+                                                    </div>
+                                                    <button class="modal-close is-large" aria-label="close"></button>
+                                                </div>
+                                            
+                                                <!-- Indicators -->
+                                                <div class="carousel-indicators">
+                                                    <!-- Indicators will be dynamically created -->
+                                                </div>
+                                            </section>
                                         </div>
 
                                         <!-- Modal -->

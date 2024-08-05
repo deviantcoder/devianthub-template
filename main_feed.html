@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeviantReddit</title>
-    <!-- Подключение Bulma -->
+    <title>DeviantHub</title>
+    <!-- Bulma -->
     <link rel="stylesheet" href="css/bulma.css">
-    <!-- Подключение Custom CSS -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <!-- Подключение Font Awesome для иконок -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <!-- NAV BAR -->
@@ -450,14 +451,52 @@
                                             </div>
                                         </div>
 
-                                        <div class="post-header">
-                                            <a href="#" class="js-modal-trigger" data-target="modal-js-example-3">
-                                                <img src="img/c5.jpg" alt="Post" class="post-image">
-                                            </a>
-                                        </div>
+
+                                        <section class="carousel">
+                                            <div class="carousel-wrapper">
+                                                <div class="carousel-slide">
+                                                    <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c5.jpg">
+                                                        <img src="img/c5.jpg" alt="Post" class="post-image">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-slide">
+                                                    <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                        <img src="img/c7.jpg" alt="Post" class="post-image">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-slide">
+                                                    <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                        <img src="img/c1.jpg" alt="Post" class="post-image">
+                                                    </a>
+                                                </div>
+                                                <div class="carousel-slide">
+                                                    <a href="#" class="js-modal-trigger" data-target="modal-js-example-3" data-image="img/c7.jpg">
+                                                        <img src="img/c2.jpg" alt="Post" class="post-image">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control prev">‹</button>
+                                            <button class="carousel-control next">›</button>
+                                        
+                                            <!-- Modal -->
+                                            <div id="modal-js-example-3" class="modal">
+                                                <div class="modal-background"></div>
+                                                <div class="modal-content">
+                                                    <img id="modal-image" src="" alt="Full Size Image">
+                                                </div>
+                                                <button class="modal-close is-large" aria-label="close"></button>
+                                            </div>
+                                        
+                                            <!-- Indicators -->
+                                            <div class="carousel-indicators">
+                                                <!-- Indicators will be dynamically created -->
+                                            </div>
+                                        </section>
+                                        
+                                        
 
                                         <!-- Modal -->
-                                        <div id="modal-js-example-3" class="modal">
+                                        <!-- <div id="modal-js-example-3" class="modal">
                                             <div class="modal-background"></div>
                                             <div class="modal-content is-large-image">
                                                 <p class="image">
@@ -465,7 +504,7 @@
                                                 </p>
                                             </div>
                                             <button class="modal-close is-large" aria-label="close"></button>
-                                        </div>
+                                        </div> -->
                                         
                                         <div class="post-content">
                                             <p>
@@ -605,6 +644,8 @@
     </footer> -->
 
     <!-- JS -->
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"></script>
+
+    
 </body>
 </html>
