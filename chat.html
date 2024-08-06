@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
+                <div class="navbar-center">
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Chatrooms</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c4.jpg" alt="Logo" class="community-image">
+                                    u/CodeMaverick
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c5.jpg" alt="Logo" class="community-image">
+                                    u/PixelPioneer
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c1.jpg" alt="Logo" class="community-image">
+                                    u/NebulaNinja
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c2.jpg" alt="Logo" class="community-image">
+                                    u/QuantumQuirk
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c3.png" alt="Logo" class="community-image">
+                                    u/EchoExplorer
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c6.jpg" alt="Logo" class="community-image">
+                                    u/ZenithZebra
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c7.jpg" alt="Logo" class="community-image">
+                                    u/MysticMarauder
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <span class="icon is-small ml-3 mr-2">
+                                        <i class="fas fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    Start new chat
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>     
+                </div>
+
+                <!-- --------------------------- CHAT --------------------------- -->
+                
+                <div class="column is-8 chat-box">
+                    <div class="content">
+
+                        
+                        <div class="content has-text-centered username-title">
+                            <h3 class="title is-flex is-align-items-center is-justify-content-center" style="margin-bottom: -1px;">
+                                <img src="img/c7.jpg" class="profile-image mr-2" alt="">
+                                u/QuantumQuirk
+                                <span class="icon is-small ml-3 mr-2 is-flex is-align-items-center">
+                                    <i class="fas fa-circle online-status" aria-hidden="true"></i>
+                                </span>
+                            </h3>
+                            <span style="font-size: 15px;">Last seen at 19:29</span>
+                        </div>
+                        
+                        <div class="container">
+                            <div class="chat-container">
+                                <div class="message received is-align-items-center">
+                                    <span class="icon is-small is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle received" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="message-content">There are many variations of passages of Lorem Ipsum available, but the majority</div>
+                                    <span class="time">19:01</span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:02</span>
+                                    <div class="message-content">have suffered alteration in some form, by injected humour</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+
+                                <div class="chat-date-container">
+                                    <div class="chat-date">Today</div>
+                                </div>
+
+                                <div class="message received is-align-items-center">
+                                    <span class="icon is-small is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle received" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="message-content">randomised words which don't look even slightly believable</div>
+                                    <span class="time">19:03</span>
+                                </div>
+                                <div class="message received is-align-items-center">
+                                    <span class="icon is-small is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle received" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="message-content">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+                                    <span class="time">19:04</span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:05</span>
+                                    <div class="message-content">All the Lorem Ipsum generators on the Internet</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:06</span>
+                                    <div class="message-content">have suffered alteration in some form, by injected humour</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="message received is-align-items-center">
+                                    <span class="icon is-small is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle received" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="message-content">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+                                    <span class="time">19:07</span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:08</span>
+                                    <div class="message-content">have suffered alteration in some form, by injected humour</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:09</span>
+                                    <div class="message-content">have suffered alteration in some form, by injected humour</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="message received is-align-items-center">
+                                    <span class="icon is-small is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle received" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="message-content">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</div>
+                                    <span class="time">19:10</span>
+                                </div>
+                                <div class="message sent is-align-items-center">
+                                    <span class="time">19:11</span>
+                                    <div class="message-content">have suffered alteration in some form, by injected humour</div>
+                                    <span class="icon is-small mr-2 is-flex is-align-items-center">
+                                        <i class="fas fa-circle chat-circle sent" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-input">
+                                <div class="input-container">
+                                    <input class="input chat-input-field" type="text" placeholder="Your message...">
+                                    <button class="button is-white chat-input-attach">
+                                        <span class="icon">
+                                            <i class="fas fa-paperclip"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <button class="button is-primary chat-input-button">
+                                    <span class="icon">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>                     
+                    </div>
+                </div>
+    
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">
+                            Pinned Messages
+                            <span class="icon">
+                                <i class="fas fa-thumbtack"></i>
+                            </span>
+                        </p>
+
+                        <ul class="">
+                            
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/profile.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">You</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                  </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c7.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">QuantumQuirk</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                  </div>
+                            </li>
+                            
+                        </ul>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

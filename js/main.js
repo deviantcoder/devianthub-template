@@ -11,9 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const prevButton = document.querySelector('.carousel-control.prev');
   const nextButton = document.querySelector('.carousel-control.next');
