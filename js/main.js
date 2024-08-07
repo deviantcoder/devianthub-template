@@ -85,6 +85,21 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCarousel();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const tabButtons = document.querySelectorAll('#tab-buttons li');
+    const tabContents = document.querySelectorAll('.tab-content');
 
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Удаляем активные классы с кнопок и содержимого
+            tabButtons.forEach(btn => btn.classList.remove('is-active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            // Добавляем активные классы к выбранным элементам
+            button.classList.add('is-active');
+            document.getElementById(button.dataset.tab).classList.add('active');
+        });
+    });
+});
 
 

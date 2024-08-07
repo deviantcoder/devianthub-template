@@ -6,7 +6,8 @@
 6. explore page ------------||
 7. all page ----------------||
 8. post creation page ------||
-9. messages page -----------||
+9. chat page ---------------|DONE|
 10. notifications ----------||
 11. post page --------------|DONE|
 12. images carousel --------|DONE|
+13. settings page ----------||

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
+                <div class="navbar-center">
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- PAGE CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Menu</p>
+                        <ul class="menu-list menu-list-custom">
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-fire" aria-hidden="true"></i>
+                                    </span>
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-binoculars" aria-hidden="true"></i>
+                                    </span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-th" aria-hidden="true"></i>
+                                    </span>
+                                    All
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Recent</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c1.jpg" alt="Logo" class="community-image">
+                                    c/4kwallpapers
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c2.jpg" alt="Logo" class="community-image">
+                                    c/nature
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c3.png" alt="Logo" class="community-image">
+                                    c/webdesign
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Communities</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <span class="icon is-small ml-3 mr-2">
+                                        <i class="fas fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    Create a community
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c4.jpg" alt="Logo" class="community-image">
+                                    c/metalcore
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c5.jpg" alt="Logo" class="community-image">
+                                    c/spotify-trends
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c6.jpg" alt="Logo" class="community-image">
+                                    c/coding
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+                        <p class="menu-label">DeviantHub by <a href="">deviantcoder</a>. 2024</p>
+
+                    </aside>
+                    
+                </div>
+
+                <!-- FEED -->
+                <div class="column is-8">
+                    <div class="content">
+                        <h2 class="title">Profile</h2>
+
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+
+                                        <div class="container profile-background" style="background-image: url('img/c4.jpg');">
+                                            <div class="item ml-5" style="display: flex; align-items: center;">
+                                                <img src="img/profile.jpg" alt="Logo" class="profile-page-image">
+                                                <div style="display: flex; flex-direction: column; margin-left: 0;">
+                                                    <a href="" class="recent-post-link" style="text-align: left; margin-bottom: -2px; padding-bottom: 0;">
+                                                        <span class="profile-page-name">
+                                                            <strong>
+                                                                DeviantCoder
+                                                            </strong>
+                                                        </span>
+                                                    </a>
+                                                    <a href="" style="text-align: left; color: rgb(190, 190, 190);">
+                                                        <span class="profile-page-username" style="display: block;">
+                                                            <strong>
+                                                                u/deviantcoder
+                                                            </strong>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item" style="align-self: flex-start;">
+                                                <a href="" class="edit-icon">
+                                                    <span class="icon is-small">
+                                                        <i class="fas fa-edit" style="font-size: 18px;"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- TABS -->
+                                        <div class="container">
+                                            <div class="tabs is-centered">
+                                                <ul id="tab-buttons">
+                                                    <li class="is-active" data-tab="tab1"><a>Overview</a></li>
+                                                    <li data-tab="tab2"><a>Posts</a></li>
+                                                    <li data-tab="tab3"><a>Comments</a></li>
+                                                    <li data-tab="tab4"><a>Saved</a></li>
+                                                    <li data-tab="tab5"><a>Hidden</a></li>
+                                                    <li data-tab="tab6"><a>Upvoted</a></li>
+                                                    <li data-tab="tab7"><a>Downvoted</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- ---------------------------------- OVERVIEW TAB ---------------------------------- -->
+                                            
+                                            <div id="tab1" class="tab-content active">
+                                                <h6>Latest Posts</h6>
+                                                <div class="box mb-3">
+                                                    <article class="media">
+                                                        <div class="media-content">
+                                                            <div class="content">
+                        
+                                                                <div class="community-item recent-item">
+                                                                    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                                        <div class="item" style="display: flex; align-items: center;">
+                                                                            <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                                                <img src="img/c1.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                                                <span class="is-size-7"><strong>c/webdesign</strong></span>
+                                                                            </a>
+                                                                            <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="dropdown is-hoverable">
+                                                                                <div class="dropdown-trigger">
+                                                                                    <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                                                        <span class="icon is-small">
+                                                                                            <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                                                    <div class="dropdown-content">
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-edit mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Edit Post</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Save</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-thumbtack mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Pin Post To Profile</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-eye-slash mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Hide</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-trash-alt mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Delete</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                        
+                                                                <div class="post-content">
+                                                                    <p>
+                                                                        <strong><a href="" class="post-title">Post Title 2</a></strong>
+                                                                        <br>
+                                                                        <span class="post-text">
+                                                                        There are many variations of passages of Lorem Ipsum available, but the majority 
+                                                                        have suffered alteration in some form, by injected humour, or randomised words 
+                                                                        which don't look even slightly believable...
+                                                                        </span>
+                                                                        <br> 
+                                                                        <small class="additional-info">Posted on: 2024-08-02</small>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <nav class="level is-mobile">
+                                                                <div class="level-left">
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="upvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">123</span>
+                                                                        <a class="vote-button" aria-label="downvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-comments" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">78</span>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-share" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </nav>
+                                                        </div>
+                                                    </article>
+                                                </div>
+
+                                                <article class="media">
+                                                    <div class="media-content">
+                                                        <div class="content">
+
+                                                            <h6>Lifetime Statistics</h6>
+                    
+                                                            <li class="community-item recent-item">
+                                                                <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                                    <div class="item profile-post-stats" style="text-align: center;">
+                                                                        <div><strong class="stat-number">1.2k</strong></div>
+                                                                        <div>
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-eye" style="font-size: 16px;"></i>
+                                                                            </span>
+                                                                            <span class="stat-text">Total Views</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item profile-post-stats" style="text-align: center;">
+                                                                        <div><strong class="stat-number">100%</strong></div>
+                                                                        <div>
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-up" style="font-size: 16px;"></i>
+                                                                            </span>
+                                                                            <span class="stat-text">Upvote Rate</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item profile-post-stats" style="text-align: center;">
+                                                                        <div><strong class="stat-number">291</strong></div>
+                                                                        <div>
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-comments" style="font-size: 16px;"></i>
+                                                                            </span>
+                                                                            <span class="stat-text">Comments</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="item profile-post-stats" style="text-align: center;">
+                                                                        <div><strong class="stat-number">12</strong></div>
+                                                                        <div>
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-share" style="font-size: 16px;"></i>
+                                                                            </span>
+                                                                            <span class="stat-text">Total Shares</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </article>
+
+                                            </div>
+
+                                            <!-- ---------------------------------- POSTS TAB ---------------------------------- -->
+
+                                            <div id="tab2" class="tab-content">
+                                                <div class="box mb-3">
+                                                    <article class="media">
+                                                        <div class="media-content">
+                                                            <div class="content">
+                        
+                                                                <div class="community-item recent-item">
+                                                                    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                                        <div class="item" style="display: flex; align-items: center;">
+                                                                            <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                                                <img src="img/c1.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                                                <span class="is-size-7"><strong>c/webdesign</strong></span>
+                                                                            </a>
+                                                                            <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="dropdown is-hoverable">
+                                                                                <div class="dropdown-trigger">
+                                                                                    <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                                                        <span class="icon is-small">
+                                                                                            <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                                                    <div class="dropdown-content">
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-edit mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Edit Post</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Save</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-thumbtack mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Pin Post To Profile</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-eye-slash mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Hide</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-trash-alt mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Delete</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                        
+                                                                <div class="post-content">
+                                                                    <p>
+                                                                        <strong><a href="" class="post-title">Post Title 2</a></strong>
+                                                                        <br> 
+                                                                        <small class="additional-info">Posted on: 2024-08-02</small>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <nav class="level is-mobile">
+                                                                <div class="level-left">
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="upvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">123</span>
+                                                                        <a class="vote-button" aria-label="downvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-comments" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">78</span>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-share" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </nav>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                                <div class="box mb-3">
+                                                    <article class="media">
+                                                        <div class="media-content">
+                                                            <div class="content">
+                        
+                                                                <div class="community-item recent-item">
+                                                                    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                                        <div class="item" style="display: flex; align-items: center;">
+                                                                            <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                                                <img src="img/c1.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                                                <span class="is-size-7"><strong>c/webdesign</strong></span>
+                                                                            </a>
+                                                                            <span class="is-size-7 ml-1"> • 5 hours ago</span>
+                                                                        </div>
+                                                                        <div class="item">
+                                                                            <div class="dropdown is-hoverable">
+                                                                                <div class="dropdown-trigger">
+                                                                                    <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                                                        <span class="icon is-small">
+                                                                                            <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                                                        </span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                                                    <div class="dropdown-content">
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-edit mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Edit Post</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Save</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-thumbtack mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Pin Post To Profile</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-eye-slash mr-1" aria-hidden="true"></i>
+                                                                                                <strong>Hide</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="dropdown-item">
+                                                                                            <a href="" class="post-title">
+                                                                                                <i class="fas fa-trash-alt mr-3" aria-hidden="true"></i>
+                                                                                                <strong>Delete</strong>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                        
+                                                                <div class="post-content">
+                                                                    <p>
+                                                                        <strong><a href="" class="post-title">Post Title 2</a></strong>
+                                                                        <br> 
+                                                                        <small class="additional-info">Posted on: 2024-08-02</small>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <nav class="level is-mobile">
+                                                                <div class="level-left">
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="upvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">123</span>
+                                                                        <a class="vote-button" aria-label="downvote">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-comments" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                        <span class="vote-count">78</span>
+                                                                    </div>
+                                                                    <div class="vote-group">
+                                                                        <a class="vote-button" aria-label="comments">
+                                                                            <span class="icon is-small">
+                                                                                <i class="fas fa-share" aria-hidden="true"></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </nav>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+
+                                            <!-- ---------------------------------- COMMENTS TAB ---------------------------------- -->
+
+                                            <div id="tab3" class="tab-content">
+                                                <article class="media">
+                                                    <div class="media-content">
+                                                        <div class="content">
+                    
+                                                            <div class="community-item recent-item">
+                                                                <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+                                                                    <div class="item" style="display: flex; align-items: center;">
+                                                                        <a href="" class="recent-post-link" style="display: flex; align-items: center;">
+                                                                            <img src="img/c1.jpg" alt="Logo" class="community-image-small" style="width: 30px; height: 30px; border-radius: 50%; margin-right: 10px;">
+                                                                            <span class="is-size-7"><strong>c/webdesign</strong></span>
+                                                                        </a>
+                                                                        <a href="" class="profile-post-link">
+                                                                            <span class="ml-1"> • variations of passages of Lorem Ipsum</span>
+                                                                        </a> 
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <div class="dropdown is-hoverable">
+                                                                            <div class="dropdown-trigger">
+                                                                                <button aria-haspopup="true" aria-controls="dropdown-menu4">
+                                                                                    <span class="icon is-small">
+                                                                                        <i class="fas fa-ellipsis-v" style="font-size: 16px;"></i>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                                                <div class="dropdown-content">
+                                                                                    <div class="dropdown-item">
+                                                                                        <a href="" class="post-title">
+                                                                                            <i class="fas fa-edit mr-1" aria-hidden="true"></i>
+                                                                                            <strong>Edit Post</strong>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="dropdown-item">
+                                                                                        <a href="" class="post-title">
+                                                                                            <i class="fas fa-bookmark mr-3" aria-hidden="true"></i>
+                                                                                            <strong>Save</strong>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="dropdown-item">
+                                                                                        <a href="" class="post-title">
+                                                                                            <i class="fas fa-thumbtack mr-3" aria-hidden="true"></i>
+                                                                                            <strong>Pin Post To Profile</strong>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="dropdown-item">
+                                                                                        <a href="" class="post-title">
+                                                                                            <i class="fas fa-eye-slash mr-1" aria-hidden="true"></i>
+                                                                                            <strong>Hide</strong>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="dropdown-item">
+                                                                                        <a href="" class="post-title">
+                                                                                            <i class="fas fa-trash-alt mr-3" aria-hidden="true"></i>
+                                                                                            <strong>Delete</strong>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                    
+                                                            <div class="post-content">
+                                                                <p>
+                                                                    <strong><a href="" class="post-title">Post Title 2</a></strong>
+                                                                    <br>
+                                                                    <span class="post-text">
+                                                                    There are many variations of passages of Lorem Ipsum available, but the majority 
+                                                                    have suffered alteration in some form, by injected humour, or randomised words 
+                                                                    which don't look even slightly believable...
+                                                                    </span>
+                                                                    <br> 
+                                                                    <small class="additional-info">Posted on: 2024-08-02</small>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <nav class="level is-mobile">
+                                                            <div class="level-left">
+                                                                <div class="vote-group">
+                                                                    <a class="vote-button" aria-label="upvote">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-arrow-up" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                    <span class="vote-count">123</span>
+                                                                    <a class="vote-button" aria-label="downvote">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="vote-group">
+                                                                    <a class="vote-button" aria-label="comments">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-comments" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                    <span class="vote-count">78</span>
+                                                                </div>
+                                                                <div class="vote-group">
+                                                                    <a class="vote-button" aria-label="comments">
+                                                                        <span class="icon is-small">
+                                                                            <i class="fas fa-share" aria-hidden="true"></i>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </article>
+                                            </div>
+
+                                            <div id="tab4" class="tab-content">
+                                                <h2>Content for Tab 4</h2>
+                                                <p>This is the content for tab 4.</p>
+                                            </div>
+                                            <div id="tab5" class="tab-content">
+                                                <h2>Content for Tab 5</h2>
+                                                <p>This is the content for tab 5.</p>
+                                            </div>
+                                            <div id="tab6" class="tab-content">
+                                                <h2>Content for Tab 6</h2>
+                                                <p>This is the content for tab 6.</p>
+                                            </div>
+                                            <div id="tab7" class="tab-content">
+                                                <h2>Content for Tab 7</h2>
+                                                <p>This is the content for tab 7.</p>
+                                            </div>
+                                        </div>                                        
+
+                                    </div>
+                                </div>
+                            </article>
+                        
+                    </div>
+                </div>
+    
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Recent Posts</p>
+
+                        <ul class="">
+                            
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c5.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7"><strong>c/webdesign</strong></span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">99 upvotes - 29 comments</span></div>
+                                  </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c6.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">c/coding</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">29 upvotes - 9 comments</span></div>
+                                  </div>
+                            </li>
+
+                            <li class="community-item recent-item">
+                                <div class="container">
+                                    <div class="item">
+                                        <a href="" class="recent-post-link">
+                                            <img src="img/c6.jpg" alt="Logo" class="community-image-small">
+                                            <span class="is-size-7">c/metalcore</span>
+                                        </a>
+                                    </div>
+                                    <div class="item"><p><a href="" class="recent-post-link"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a></p></div>
+                                    <div class="item"><span class="is-size-7 additional-info">29 upvotes - 9 comments</span></div>
+                                  </div>
+                            </li>
+                            
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Topics</p>
+
+                        <ul class="menu-list menu-list-custom">
+                            <li>
+                                <a href="#" class="is-active">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    Explore
+                                </a>
+                            </li>
+                            
+                        </ul>
+
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Футер -->
+    <!-- <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>DeviantReddit</strong> by <a href="https://yourwebsite.com">Your Name</a>.
+            </p>
+        </div>
+    </footer> -->
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>
