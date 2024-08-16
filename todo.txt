@@ -11,3 +11,4 @@
 11. post page --------------|DONE|
 12. images carousel --------|DONE|
 13. settings page ----------||
+14. profile pic dropdown ---||

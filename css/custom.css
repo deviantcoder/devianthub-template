@@ -733,3 +733,26 @@
 .profile-post-link:hover {
     color: white;
 }
+
+.profile-side-menu {
+    background-color: #0c0e11;
+    border-radius: 25px;
+}
+
+.share-link-group {
+    display: flex;
+    align-items: center;
+    background-color: #3c3e3f;
+    border-radius: 20px;
+}
+
+.share-link {
+    display: flex;
+    color: #f7f7f7;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
