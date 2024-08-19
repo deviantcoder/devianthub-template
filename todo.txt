@@ -1,6 +1,6 @@
 1. home (main feed) --------|DONE|
-2. profile page ------------||
-3. user page ---------------||
+2. profile page ------------|DONE|
+3. user page ---------------|DONE|
 4. community page ----------||
 5. popular page ------------||
 6. explore page ------------||
@@ -12,3 +12,12 @@
 12. images carousel --------|DONE|
 13. settings page ----------||
 14. profile pic dropdown ---||
+
+Base:
+1. home
+2. profile
+3. user
+4. community
+5. post
+6. post creation
+7. chat

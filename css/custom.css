@@ -182,6 +182,10 @@
     color: #0EBBE3;
 }
 
+.post-text {
+    font-size: 14px;
+}
+
 .back-link {
     display: flex;
     align-items: center;
@@ -737,6 +741,7 @@
 .profile-side-menu {
     background-color: #0c0e11;
     border-radius: 25px;
+    align-self: flex-start;
 }
 
 .share-link-group {
@@ -751,8 +756,29 @@
     color: #f7f7f7;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 30px;
+    width: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 27px;
     margin: 0 5px;
-    transition: transform 0.2s ease-in-out;
+}
+
+.sidemenu-profile-image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.social-link {
+    display: flex;
+    color: #f7f7f7;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 27px;
+    margin: 0 5px;
 }
