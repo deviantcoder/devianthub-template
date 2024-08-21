@@ -4,7 +4,7 @@ Templates:
 1. home (main feed) --------|DONE| (b)
 2. profile page ------------|DONE| (b)
 3. user page ---------------|DONE| (b)
-4. community page ----------||
+4. community page ----------|| (b)
 5. popular page ------------||
 6. explore page ------------||
 7. all page ----------------||
@@ -20,3 +20,4 @@ Templates:
 Preliminary tasks:
 1. basic templates ---------||
 2. db design ---------------||
+3. django projects design --||
