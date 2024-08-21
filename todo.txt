@@ -1,23 +1,22 @@
-1. home (main feed) --------|DONE|
-2. profile page ------------|DONE|
-3. user page ---------------|DONE|
+*** DeviantHub ToDo ***
+
+Templates:
+1. home (main feed) --------|DONE| (b)
+2. profile page ------------|DONE| (b)
+3. user page ---------------|DONE| (b)
 4. community page ----------||
 5. popular page ------------||
 6. explore page ------------||
 7. all page ----------------||
-8. post creation page ------||
-9. chat page ---------------|DONE|
+8. post creation page ------|DONE| (b)
+9. chat page ---------------|DONE| (b)
 10. notifications ----------||
-11. post page --------------|DONE|
-12. images carousel --------|DONE|
-13. settings page ----------||
-14. profile pic dropdown ---||
+11. post page --------------|DONE| (b)
+12. settings page ----------||
+13. profile pic dropdown ---|| (optional)
 
-Base:
-1. home
-2. profile
-3. user
-4. community
-5. post
-6. post creation
-7. chat
+------------------------------
+
+Preliminary tasks:
+1. basic templates ---------||
+2. db design ---------------||

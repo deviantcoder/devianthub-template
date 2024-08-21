@@ -782,3 +782,8 @@
     height: 27px;
     margin: 0 5px;
 }
+
+.post-creation-field {
+    border-radius: 20px;
+    background-color: rgb(14, 24, 29);
+}

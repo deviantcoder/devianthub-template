@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviantHub | Post</title>
+    <!-- Подключение Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Подключение Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
+                <div class="navbar-center">
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- PAGE CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+
+                <!-- SIDE PANEL -->
+                <div class="column is-3">
+                    <aside class="menu">
+                        <p class="menu-label">Menu</p>
+                        <ul class="menu-list menu-list-custom">
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-home" aria-hidden="true"></i>
+                                    </span>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-fire" aria-hidden="true"></i>
+                                    </span>
+                                    Popular
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-binoculars" aria-hidden="true"></i>
+                                    </span>
+                                    Explore
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="is-active">
+                                    <span class="icon is-small mr-2">
+                                        <i class="fas fa-th" aria-hidden="true"></i>
+                                    </span>
+                                    All
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Recent</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c1.jpg" alt="Logo" class="community-image">
+                                    c/4kwallpapers
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c2.jpg" alt="Logo" class="community-image">
+                                    c/nature
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c3.png" alt="Logo" class="community-image">
+                                    c/webdesign
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <p class="menu-label">Communities</p>
+
+                        <ul class="menu-list">
+                            <li class="community-item">
+                                <a href="#">
+                                    <span class="icon is-small ml-3 mr-2">
+                                        <i class="fas fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    Create a community
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c4.jpg" alt="Logo" class="community-image">
+                                    c/metalcore
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c5.jpg" alt="Logo" class="community-image">
+                                    c/spotify-trends
+                                </a>
+                            </li>
+                            <li class="community-item">
+                                <a href="#">
+                                    <img src="img/c6.jpg" alt="Logo" class="community-image">
+                                    c/coding
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+                        <p class="menu-label">DeviantHub by <a href="">deviantcoder</a>. 2024</p>
+
+                    </aside>
+                    
+                </div>
+
+                <!-- FORM -->
+                <div class="column is-8">
+                    <div class="content">
+
+                        <h4>Create Post</h4>
+                        
+                        <div class="box mb-3">
+                            <article class="media">
+                                <div class="media-content">
+                                    <div class="content">
+                                        <form action="/post/create" method="POST">
+                                            <div class="field">
+                                                <label class="label">Title</label>
+                                                <div class="control">
+                                                    <input class="input post-creation-field" type="text" name="title" placeholder="Enter the post title" required>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label class="label">Content</label>
+                                                <div class="control">
+                                                    <textarea class="textarea post-creation-field" name="content" placeholder="Write your post here..." required></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="field is-grouped">
+                                                <div class="control">
+                                                    <button type="submit" class="button" style="border-radius: 20px; background-color: rgb(1, 59, 66);">
+                                                        Post
+                                                    </button>
+                                                </div>
+                                                <div class="control">
+                                                    <button type="reset" class="button" style="border-radius: 20px; background-color: rgb(34, 34, 34);;">
+                                                        Save draft
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script> 
+</body>
+</html>
