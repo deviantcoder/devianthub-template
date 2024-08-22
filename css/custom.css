@@ -117,14 +117,10 @@
     width: auto;
 }
 
-
-
 .navbar-menu {
-    /* display: flex; */
     align-items: center;
     justify-content:center;
     width: 85%;
-    /* box-sizing: border-box; */
 }
 
 .search-wrapper {
@@ -153,7 +149,6 @@
     max-height: 400px;
     margin-bottom: 10px;
     text-align: center;
-    /* box-shadow: 0 2px 10px rgba(235, 232, 232, 0.2); */
 }
 
 .post-header {
@@ -205,7 +200,7 @@
 }
 
 .custom-textarea {
-    height: 50px !important; /* Установите нужную высоту */
+    height: 50px !important;
 }
 
 .username-link {
@@ -316,7 +311,7 @@
 
 .online-label {
     position: relative;
-    padding-left: 15px; /* Adjust the spacing as needed */
+    padding-left: 15px;
 }
 
 .online-label::before {
@@ -325,9 +320,9 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 8px; /* Size of the dot */
-    height: 8px; /* Size of the dot */
-    background-color: rgb(1, 185, 1); /* Color of the dot */
+    width: 8px;
+    height: 8px;
+    background-color: rgb(1, 185, 1);
     border-radius: 50%;
 }
 
@@ -400,9 +395,9 @@
     width: 100%;
     height: 100%;
     z-index: 1000;
-    overflow: hidden; /* Отключение скролла */
-    align-items: center; /* Центрирование по вертикали */
-    justify-content: center; /* Центрирование по горизонтали */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal.is-active {
@@ -415,15 +410,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Немного затемнения фона */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
     position: relative;
     z-index: 1;
-    width: 90vw; /* Увеличение ширины */
-    height: 90vh; /* Увеличение высоты */
-    display: flex; /* Центрирование содержимого */
+    width: 90vw;
+    height: 90vh;
+    display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -432,8 +427,8 @@
 .modal-content img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Сохранение пропорций изображения */
-    cursor: pointer; /* Показ курсора, чтобы указать, что изображение кликабельно */
+    object-fit: contain;
+    cursor: pointer;
 }
 
 .modal-close {
@@ -442,7 +437,7 @@
     right: 10px;
     background: none;
     border: none;
-    font-size: 2rem; /* Увеличение размера кнопки закрытия */
+    font-size: 2rem;
     color: white;
     cursor: pointer;
     z-index: 2;
@@ -652,9 +647,6 @@
     display: block;
 }
 
-
-
-/* Убираем линию под вкладками */
 .tabs.is-centered::before {
     display: none !important;
 }
@@ -663,17 +655,17 @@
 }
 
 #tab-buttons li {
-    height: 30px; /* измените значение на нужную высоту */
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .profile-post-stats {
-    border: 1px solid #a8adcc; /* Цвет и толщина рамки */
-    padding: 10px; /* Внутренние отступы */
-    border-radius: 15px; /* Закругленные углы */
-    margin: 5px; /* Внешние отступы */
+    border: 1px solid #a8adcc;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
     width: 150px;
 }
 
@@ -693,12 +685,13 @@
 }
 
 .profile-background {
-    border-radius: 20px;
+    border-radius: 25px;
     background-size: cover; 
     background-position: center; 
     height: 150px;
     display: flex; 
     justify-content: space-between;
+    border: 2px solid #2A3236;
 }
 
 .profile-background::before {
@@ -786,4 +779,84 @@
 .post-creation-field {
     border-radius: 20px;
     background-color: rgb(14, 24, 29);
+}
+
+
+
+.community-page-image-container {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: linear-gradient(to bottom right, rgb(0, 90, 102), rgb(133, 0, 89)); /* Градиент от белого к чёрному */
+}
+
+.commuity-page-image {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #7fb6d1;
+}
+
+.community-header-buttons {
+    border: 2px solid rgb(165, 160, 189);
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 17px;
+    backdrop-filter: blur(10px);
+}
+
+.community-header-buttons:hover {
+    background-color: #14161A;
+}
+
+.community-title-blur {
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.community-description {
+    font-size: 15px;
+    color: #718a94;
+    line-height: 1.2;
+}
+
+
+
+.rule {
+    border-bottom: 1px solid #646464;
+    margin-bottom: 10px;
+}
+
+.rule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.rule-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.toggle-icon {
+    font-size: 18px;
+}
+
+.rule-description {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #718a94;
+    line-height: 1.2;
+}
+
+.side-panel-label {
+    font-size: 13px;
+    text-transform: uppercase;
 }

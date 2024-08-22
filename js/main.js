@@ -102,4 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function toggleDescription(ruleId) {
+    var description = document.getElementById(ruleId);
+    var icon = description.previousElementSibling.querySelector('.toggle-icon');
+    
+    if (description.style.display === "none" || description.style.display === "") {
+        description.style.display = "block";
+        icon.textContent = "−";
+    } else {
+        description.style.display = "none";
+        icon.textContent = "+";
+    }
+}
+
+
 
