@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Подключение Bulma -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <!-- Подключение Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="" href="">
+                    <img src="img/logo.png" alt="DeviantHub" class="navbar-logo mt-2">
+                </a>
+    
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+    
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start"></div>
+    
+                <div class="navbar-center">
+                    <div class="control has-icons-left">
+                        <input class="input is-rounded" type="text" placeholder="Search DeviantHub">
+                        <span class="icon is-left">
+                            <i class="fas fa-search"></i>
+                        </span> 
+                    </div>
+                </div>
+    
+                <div class="navbar-end">
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-comment-dots" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="navbar-item a-button">
+                        <span class="icon is-left">
+                            <i class="fas fa-bell" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <div class="buttons">
+                        <a class="">
+                            <img class="profile-image mt-2 mr-2 ml-5" src="img/profile.jpg" alt="Profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>    
+
+    <!-- PAGE CONTENT -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-4 is-offset-4">
+                    <h3 class="title">Log In</h3>
+                    <div class="box">
+                        <figure class="avatar">
+                            <img src="img/logo_no_text.png">
+                        </figure>
+                        <form>
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-medium" type="email" placeholder="Username" autofocus="">
+                                </div>
+                            </div>
+        
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-medium" type="password" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    Remember me
+                                </label>
+                            </div>
+                            <div style="text-align: center;">
+                                <button class="button is-info">
+                                    <i class="fas fa-sign-in-alt mr-2" aria-hidden="true"></i>
+                                    Log In
+                                </button>
+                            </div>
+                        </form>
+        
+                        <hr>
+        
+                        <span>or sign in using</span>
+        
+                        <div class="buttons is-centered mt-3">
+                            <a class="button is-rounded" href="#">
+                                <span class="icon" style="font-size: 25px;">
+                                    <i class="fab fa-google"></i>
+                                </span>
+                            </a>
+                            <a class="button is-rounded" href="#">
+                                <span class="icon" style="font-size: 25px;">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+        
+                    </div>
+                    <p class="has-text-grey">
+                        <a href="">Sign Up</a> &nbsp;·&nbsp;
+                        <a href="">Forgot Password</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- JS -->
+    <script src="js/main.js"></script> 
+</body>
+</html>
