@@ -122,7 +122,13 @@ a:hover {
     font-size: 14px;
 }
 
-.community-title-sm {
+.community-name-white {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+.title-sm {
     font-weight: bold;
     font-size: 12px;
     color: white;
@@ -184,7 +190,7 @@ a:hover {
     font-size: 1rem;
 }
 
-.post-date {
+.pub-date {
     font-size: 0.7rem;
 }
 
@@ -299,3 +305,128 @@ a:hover {
 }
 
 /* ****** */
+
+.dimmed-community-title {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #cfcfcf;
+    line-height: 1.1;
+}
+
+.dimmed-community-description {
+    display: inline-block;
+    font-size: 14px;
+    color: #9C9C9C;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.online-label {
+    position: relative;
+    padding-left: 15px;
+}
+
+.online-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: rgb(1, 185, 1);
+    border-radius: 50%;
+}
+
+.panel-community-stats {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* COMMENT */
+
+.comment {
+    border: 1px solid #132137;
+    background-color: #0e1a2d;
+}
+
+.nested-comment {
+    margin-left: 30px;
+}
+
+.comments-section {
+    background-color: #1b0719;
+    padding: 10px;
+}
+.comment-form textarea {
+    background-color: #353535;
+    color: #ffffff;
+    border: none;
+    resize: vertical;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.comment-form textarea:focus {
+    color: #ffffff;
+    background-color: #2e0c2c; /* Более темный оттенок при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+}
+
+.comment-form textarea::placeholder {
+    color: #b0b0b0; /* Светло-серый цвет для плейсхолдера */
+}
+
+.comment-form button {
+    width: 25%;
+}
+
+.comment-text {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .comment-text {
+        font-size: 12px;
+    }
+}
+
+.login {
+    max-width: 400px; 
+    width: 100%; 
+    background-color: #222222; 
+    /* border: 1px white solid; */
+    color: #fff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 !important;
+}
+
+.login-field::placeholder {
+    color: rgb(160, 160, 160);
+}
+
+.login-field {
+    background-color: #0e0511;
+    color: white;
+    border: none;
+}
+
+.login-field:focus {
+    border-color: #007bff;
+    background-color: #280c32;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #5b88b9;
+}
+
+.form-label {
+    color: rgb(187, 188, 217);
+}
