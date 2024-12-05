@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand text-white" href="#">
+                <img src="img/logo_no_text2.png" alt="Logo" class="logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex ms-3 search-bar">
+                    <input class="form-control me-2 no-radius" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light no-radius" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create_Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <!-- Language Switcher -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card bg-dark text-white no-radius">
+                    <div class="card-header">
+                        <h4>Create Post</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" method="POST">
+                            <!-- Title -->
+                            <div class="mb-3">
+                                <label for="title" class="form-label">Title</label>
+                                <input type="text" class="form-control login-field" id="title" placeholder="Enter a post title" required>
+                            </div>
+    
+                            <ul class="nav nav-tabs bg-dark text-white" id="postTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="text-tab" data-bs-toggle="tab" href="#text" role="tab" aria-controls="text" aria-selected="true">Text</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="media-tab" data-bs-toggle="tab" href="#media" role="tab" aria-controls="media" aria-selected="false">Media</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="link-tab" data-bs-toggle="tab" href="#link" role="tab" aria-controls="link" aria-selected="false">Link</a>
+                                </li>
+                            </ul>
+    
+                            <div class="tab-content mt-3" id="postTabsContent">
+                                <div class="tab-pane fade show active" id="text" role="tabpanel" aria-labelledby="text-tab">
+                                    <div class="mb-3">
+                                        <label for="body" class="form-label">Body</label>
+                                        <textarea class="form-control login-field" id="body" name="body" rows="5" placeholder="Enter post content" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="media-tab">
+                                    <div class="mb-3">
+                                        <label for="body-media" class="form-label">Body</label>
+                                        <textarea class="form-control login-field" id="body-media" name="body-media" rows="5" placeholder="Enter post content" required></textarea>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <button type="button" class="btn btn-info">Add Media</button>
+                                    </div>
+                                </div>
+    
+                                <div class="tab-pane fade" id="link" role="tabpanel" aria-labelledby="link-tab">
+                                    <div class="mb-3">
+                                        <label for="body-link" class="form-label">Body</label>
+                                        <textarea class="form-control login-field" id="body-link" name="body-link" rows="5" placeholder="Enter post content" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="youtube-link" class="form-label">YouTube Link</label>
+                                        <input type="url" class="form-control login-field" id="youtube-link" name="youtube-link" placeholder="Enter YouTube link">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-4">
+                                <button type="submit" class="btn btn-primary mx-2">Create</button>
+                                <button type="submit" class="btn btn-secondary mx-2">Save Draft</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
